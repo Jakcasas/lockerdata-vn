@@ -1,0 +1,14 @@
+{
+  "name": "lockerdata-vn",
+  "version": "4.0.0",
+  "private": true,
+  "description": "LockerData.VN — Phân tích bóng đá Việt Nam và sơ đồ nhiệt cầu thủ theo trận",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node tests/check-upgrade.cjs && node tests/check-analytics.cjs && node tests/check-player-heat.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
