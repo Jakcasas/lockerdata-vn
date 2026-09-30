@@ -27,4 +27,3 @@ for(const m of html.matchAll(/(?:src|href)="([^"#]+)"/g)){if(!m[1].includes('://
 console.log('PASS: six routes, verified vs demo data, status filters, V.League 2 empty state, Vietnamese search, valuation, 72 player panels, all local asset references.');
 
 
-

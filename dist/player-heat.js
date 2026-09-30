@@ -69,4 +69,3 @@ document.addEventListener('click',e=>{const el=e.target.closest('button');if(!el
 });
 document.addEventListener('keydown',e=>{if(e.key==='Enter'&&['heat-from','heat-to'].includes(e.target.id)){e.preventDefault();applyHeatRange($('#heat-from').value,$('#heat-to').value);}});
 render();
-

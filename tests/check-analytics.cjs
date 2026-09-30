@@ -25,4 +25,3 @@ run("lab.query='';lab.transferType='in'");assert.equal(run('filteredTransfers().
 run("state.league='V.League 2'");assert.equal(run('filteredTransfers().length'),0);assert(!run('lineupsPage()').includes('named-pitch'));
 console.log('PASS: 9 routes; 40 verified roster entries; event totals, periods and player aggregation; empty timeline; normalized Poisson outcomes; Vietnamese transfer filters; missing league data.');
 
-

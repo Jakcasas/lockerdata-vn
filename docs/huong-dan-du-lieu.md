@@ -38,4 +38,3 @@ Ngày trên thẻ chuyển nhượng là ngày đăng của nguồn, không tự
 Đã kiểm tra 9 trang, đủ 40 tên trong danh sách thi đấu, cộng gộp sự kiện theo đội/cầu thủ/hiệp, mốc phút 0, các kịch bản Poisson, tìm tên không dấu, bộ lọc và trạng thái thiếu dữ liệu V.League 2. Kiểm tra trình duyệt trên desktop và màn hình rộng 390px: không tràn trang theo chiều ngang; menu đóng sau chuyển trang; không ghi nhận lỗi console. Đã sửa máy chủ xem trước để tìm `dist` theo vị trí file, không phụ thuộc thư mục khởi động.
 
 Xuất bản Sites chưa thành công: kết nối Git tới `git.chatgpt-team.site:443` qua proxy của môi trường bị lỗi. Chưa có URL online được xác minh và chưa có bản v3 công khai. Gói ZIP chứa toàn bộ tài nguyên website tĩnh để bàn giao; không chứa thông tin đăng nhập.
-

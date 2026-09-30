@@ -60,4 +60,3 @@ $('#detail').addEventListener('click',e=>{if(e.target===$('#detail')){const r=e.
 window.addEventListener('hashchange',()=>{if(document.querySelector('#detail').open)document.querySelector('#detail').close();render();window.scrollTo(0,0);});
 $('#search-icon').innerHTML=icon('search');render();
 
-

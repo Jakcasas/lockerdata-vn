@@ -29,4 +29,3 @@ Lựa chọn trận VPF Hà Nội–CAHN ngày 08/03/2026 chỉ có danh sách t
 Đã kiểm tra 10 trang, 22 cầu thủ theo trận, tổng số liệu khu vực, hiệp 1 + hiệp 2 = cả trận, giới hạn khoảng phút, liên kết hồ sơ và trạng thái thiếu dữ liệu. Kiểm tra trình duyệt desktop và mobile 390px không có lỗi console hoặc tràn ngang trang.
 
 Xuất bản Sites vẫn chưa thành công do môi trường không kết nối được máy chủ Git hosting qua proxy. Địa chỉ 127.0.0.1 là bản xem trước cục bộ. Gói ZIP là website tĩnh hoàn chỉnh, chưa phải xác nhận website đã online.
-

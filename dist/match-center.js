@@ -72,4 +72,3 @@ window.addEventListener('hashchange',()=>{
   if(location.hash==='#matches'&&state.matchFilter==='official'){state.matchMode='verified';state.matchFilter='all';render();}
 });
 render();
-

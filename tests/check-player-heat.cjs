@@ -24,4 +24,3 @@ if(process.argv.includes('--export-example')){
   console.log('Exported labelled sample SVG for Quang Hai.');
 }
 
-

@@ -50,4 +50,3 @@ server.mjs  Máy chủ xem trước cục bộ
 Thư mục xuất bản là `dist/`. Các trang dùng hash route nên không cần cấu hình rewrite. Đưa mã nguồn lên GitHub chưa đồng nghĩa website đã được triển khai online.
 
 Xem [hướng dẫn sơ đồ nhiệt](docs/huong-dan-so-do-nhiet.md) và [hướng dẫn dữ liệu](docs/huong-dan-du-lieu.md).
-

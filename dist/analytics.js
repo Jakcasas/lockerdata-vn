@@ -94,4 +94,3 @@ document.addEventListener('input',e=>{
 });
 document.addEventListener('click',e=>{const el=e.target.closest('button');if(!el)return;if(el.dataset.labView){lab.view=el.dataset.labView;updateLab();}if(el.dataset.eventPlayer!==undefined){lab.player=el.dataset.eventPlayer;lab.view='heat';$('#lab-player').value=lab.player;updateLab();$('#lab-output').scrollIntoView({behavior:'smooth',block:'start'});}});
 render();
-
