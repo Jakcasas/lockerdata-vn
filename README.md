@@ -1,6 +1,6 @@
 # LockerData.VN
 
-Website phân tích bóng đá Việt Nam, tập trung vào V.League. Bản v4 có thống kê cầu thủ, phân tích trận, đội hình thi đấu, thông báo chuyển nhượng và sơ đồ nhiệt của một cầu thủ trong một trận.
+Website phân tích bóng đá Việt Nam, tập trung vào V.League. Bản v5 bổ sung nhập sự kiện từ video, điểm theo sự kiện, KDE theo mét và định giá EUR/VNĐ dựa trên kế hoạch V-League Analytics.
 
 ## Chạy trên máy
 
@@ -10,9 +10,14 @@ Cần Node.js 18 trở lên. Website không có thư viện ngoài cần cài đ
 npm start
 ```
 
-Mở <http://127.0.0.1:4173/>. Bạn cũng có thể mở trực tiếp `dist/index.html` trong trình duyệt.
+Mở <http://127.0.0.1:4173/>. Có thể chạy `node server.mjs` nếu máy chưa có npm. Nên dùng server để kho cục bộ hoạt động ổn định.
 
 ## Tính năng
+
+- Video & nhập liệu: video cục bộ, đội hình sửa được, đường chuyền hai điểm, chuẩn hóa hướng tấn công, nhiều phiên, nhập/xuất JSON.
+- Phân tích sự kiện: Gaussian KDE 105×68m, bộ lọc phút, điểm 1–10 có bảng đóng góp, đối chiếu cầu thủ và tranh chấp có đối thủ.
+- Định giá v2: 10 giả định, EUR/VNĐ, lọc bảng xếp hạng, tổng hồ sơ theo CLB và lịch sử kịch bản cục bộ.
+- [Hướng dẫn v5, công thức và phạm vi](docs/ban-v5-theo-ke-hoach.md). [Thiết kế PostgreSQL](database/schema.sql) chưa kết nối máy chủ.
 
 - Kết quả V.League lưu trữ có nguồn VPF; tách riêng chế độ trận mẫu.
 - Hồ sơ cầu thủ, so sánh, số liệu trên 90 phút, xuất CSV và định giá thử nghiệm.
@@ -34,7 +39,7 @@ Tọa độ sự kiện, xG, hồ sơ mùa mẫu, điểm LD, định giá và d
 npm test
 ```
 
-Các kiểm tra bao gồm trang điều hướng, tách dữ liệu thực/mẫu, danh sách thi đấu, tổng số liệu sự kiện, chuẩn hóa xác suất, lọc cầu thủ và sơ đồ nhiệt theo khoảng phút.
+Các kiểm tra bao gồm 12 trang điều hướng, tách dữ liệu thực/mẫu, danh sách thi đấu, tổng sự kiện, chuẩn hóa xác suất, lọc cầu thủ, KDE theo mét, điểm theo đóng góp, hợp lệ JSON, lưu cục bộ, mô hình giá và máy chủ tĩnh xử lý URL sai.
 
 ## Cấu trúc
 
@@ -42,6 +47,7 @@ Các kiểm tra bao gồm trang điều hướng, tách dữ liệu thực/mẫu
 dist/       Website tĩnh hoàn chỉnh
 tests/      Kiểm tra bằng Node.js
 docs/       Hướng dẫn sử dụng và dữ liệu
+database/   Thiết kế PostgreSQL chưa kết nối
 server.mjs  Máy chủ xem trước cục bộ
 ```
 
